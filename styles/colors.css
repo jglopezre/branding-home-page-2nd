@@ -1,0 +1,12 @@
+:root {
+    --color-01: #300537;
+    --color-02: #971f5f;
+    --color-03: #681240;
+    --color-04: #ff9900;
+    --color-05: #fff;
+    --color-06: #ff289b;
+    --shadow-color-01: rgba(0, 0, 0, 0.6);
+    --shadow-color-02: rgba(0, 0, 0, 0.4);
+    --purple-gradient-01: linear-gradient(90deg, #300537, #971f5f);
+    --purple-gradient-02: linear-gradient(90deg, #681240, #971f5f);
+}
