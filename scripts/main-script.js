@@ -25,7 +25,7 @@ $('.testimonial-carousel').owlCarousel({
     center: true,
     nav: true,
     dots: false,
-    margin: 30,
+    margin: 50,
     items: 1,
     navText:['<i class="fa-solid fa-caret-left"></i>', '<i class="fa-solid fa-caret-right"></i>']
 })

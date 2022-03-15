@@ -24,10 +24,14 @@ p {
 
 a {
     color: var(--color-05);
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
 }
 
 a:hover {
     text-decoration: none;
+
 }
 
 /*****************************************************************************************/
@@ -39,22 +43,19 @@ a:hover {
 
 .circle {
     text-align: center;
-    background-color: var(--color-05);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
     margin: 0.5rem;
     transition: 0.2s;
 }
 
 .circle:hover {
     transform: scale(1.2);
-
 }
 
 .circle > a {
-    color: var(--color-01);
     text-decoration: none;
 }
 
@@ -69,6 +70,7 @@ a:hover {
 .btn {
     background-color: var(--color-04);
     box-shadow: -3px 3px var(--shadow-color-01);
+    text-shadow: 1px 1px var(--shadow-color-02);
     border-radius: 10px 15px 10px 15px;
     transform: skew(-20deg);
     padding-left: 2rem;
@@ -76,6 +78,7 @@ a:hover {
     font-weight: 900;
     font-size: 1.3rem;
     color: var(--color-05);
+
 }
 
 .btn:hover {
@@ -150,10 +153,139 @@ a:hover {
     font-style: normal;
 }
 
+.owl-stage-outer {
+    margin-right: -30px;
+    margin-left: -10px;
+}
+
+@media screen and (max-width: 600px) {
+    .owl-stage-outer {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
 /*****************************************************************************************/
 /***GENERAL SECTION END*******************************************************************/
 /*****************************************************************************************/
+/*****************************************************************************************/
+/***HERO SECTION BEGIN********************************************************************/
+/*****************************************************************************************/
 
+#hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-section::before,
+#hero-section::after {
+    content: "";
+    display: block;
+    position:absolute;
+    width: 45%;
+    height: 100vh;
+    top: 0;
+    transform: skew(-30deg);
+    border-radius: 30px 50px 30px 50px;
+    background: var(--purple-gradient-03);
+    opacity: 0.85;
+    z-index: -5;
+}
+
+#hero-section::before {
+    left: 60%;
+}
+
+#hero-section::after {
+    left: 80%;  
+}
+
+#hero-section > video {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero-section .main-navbar {
+    z-index: 10000;
+}
+
+#hero-section .toggler-button{
+    color: var(--color-03);
+    text-shadow: -1px 1px var(--color-05);
+    box-shadow: -1px 1px var(--color-05);
+    font-size: 2rem;
+    border: solid 2px var(--color-03);
+    border-radius: 10px;
+}
+
+#hero-section nav ul > li {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#hero-section nav ul > li > a {
+    color: var(--color-02);
+    text-shadow: -1px 1px var(--color-05);
+}
+
+#hero-section .hero-caption {
+    margin-top: 15%;
+}
+
+#hero-section .hero-caption h1 {
+    color: var(--color-05);
+    text-shadow: -3px 3px var(--color-01);
+    font-size: 4rem;
+    text-align: end;
+    line-height: 6rem;
+}
+
+#hero-section .hero-caption a {
+    text-shadow: 2px 2px var(--shadow-color-01);
+    font-size: 2rem;
+}
+
+#hero-section a.action-btn {
+    margin-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#hero-section .social-box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    top: 50%;
+    left: -280px;
+    background-color: var(--color-02);
+}
+
+#hero-section .social-box .circle {
+    background: var(--purple-gradient-01);
+    border: solid 1px var(--color-06);
+
+}
+
+#hero-section .social-box .circle > a{
+    color: var(--color-05);
+}
+@media screen and (max-width: 900px){
+    #hero-section .hero-caption h1 {
+        font-size: 3rem;
+    }
+}
+
+/*****************************************************************************************/
+/***HERO SECTION END**********************************************************************/
+/*****************************************************************************************/
 /*****************************************************************************************/
 /***BEST SELLERS SECTION BEGIN************************************************************/
 /*****************************************************************************************/
@@ -206,8 +338,142 @@ a:hover {
 /***BEST SELLERS SECTION END**************************************************************/
 /*****************************************************************************************/
 /*****************************************************************************************/
+/***ABOUT US SECTION BEGIN****************************************************************/
+/*****************************************************************************************/
+
+#about-us .about-wrapper {
+    position: relative;
+    height: 600px;
+    border: solid 1px cyan;
+}
+
+#about-us .about-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1300px;
+    height: 600px;
+    left: -150px;
+    bottom: 0px;
+    background: var(--purple-gradient-02);
+    transform: skew(-20deg);
+    border-radius: 20px 35px 20px 35px;
+    z-index: -1;
+}
+
+#about-us .about-wrapper .image-window {
+    position: absolute;
+    transform: skew(-20deg);
+    overflow: hidden;
+    width: 375px;
+    border-radius: 20px 35px 20px 35px;
+    right: -50px;
+    bottom: 100px;
+}
+
+
+#about-us .about-wrapper .image-window > img {
+    width:auto;
+    height: 600px;
+    margin-left: -175px;
+    transform: skew(20deg);
+}
+
+#about-us .item-box {
+    position: absolute;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 800px;
+    bottom: 60px;
+    left: 400px;
+    background-color: var(--color-05);
+    border: solid 1px var(--shadow-color-02);
+    border-radius: 20px 30px 20px 30px;
+    box-shadow: 0 5px var(--shadow-color-02);
+    transform: skew(-20deg); 
+
+}
+
+#about-us .item-box table {
+    transform: skew(20deg);
+    margin: 0.5rem 1rem;
+}
+
+#about-us .item-box table td {
+    padding: 0.5rem;
+}
+
+#about-us .item-box table td > p {
+    font-size: 1.2rem;
+    color: var(--color-01);
+    padding-top: 1.3rem;
+}
+
+#about-us .item-box table .circle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: var(--purple-gradient-03);
+}
+
+#about-us .item-box table .circle > img {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 7px;
+    left: 7px;
+}
+
+#about-us .about-wrapper .about-title {
+    position: absolute;
+    left: 10%;
+    top: 3rem
+}
+
+#about-us .about-wrapper .about-title > h1 {
+    color: var(--color-05);
+}
+
+#about-us .about-wrapper .about-caption {
+    position: absolute;
+    max-width: 60%;
+    min-width: 360px;
+    left: 10%;
+    top: 7rem;
+}
+
+
+
+#about-us .about-wrapper .about-caption a.btn {
+    background-color: var(--color-05);
+    color: var(--color-02);
+    margin-top: 3rem;
+}
+
+#about-us .about-wrapper .about-caption p {
+    line-height: 1.2rem;
+    color: var(--color-05);
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+#about-us .about-wrapper .about-caption p > span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/*****************************************************************************************/
+/***ABOUT US SECTION END******************************************************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
 /***SHOP BY CATEGORY SECTION BEGIN********************************************************/
 /*****************************************************************************************/
+
+#shop-by-category {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
 #shop-by-category .rotated-box {
     transform: rotate(-12deg);
 }
@@ -265,6 +531,37 @@ a:hover {
 /*****************************************************************************************/
 /***TESTIMONIALS SECTION BEGIN************************************************************/
 /*****************************************************************************************/
+#testimonials {
+    margin-top: 8rem;
+}
+#testimonials .testimonials-carousel-wrapper {
+    position: relative;
+    width: 360px;
+}
+
+
+#testimonials .testimonials-carousel-wrapper::before,
+#testimonials .testimonials-carousel-wrapper::after {
+    content: "";
+    display: block;
+    position:absolute;
+    width: 550px;
+    height: 130%;
+    transform: skew(-30deg);
+    border-radius: 20px 20px 0 0;
+}
+
+#testimonials .testimonials-carousel-wrapper::before {
+    background: var(--purple-gradient-03);
+    bottom: -50px;
+    left: -100px;
+}
+
+#testimonials .testimonials-carousel-wrapper::after {
+    background: var(--purple-gradient-04);
+    bottom: -50px;
+    left: 500px;
+}
 
 #testimonials .card-wrapper .card-description {
     right: 30px;
@@ -272,9 +569,9 @@ a:hover {
 }
 
 #testimonials .owl-nav {
-    color: var(--color-01);
+    color: var(--color-05);
     font-size: 2rem;
-    
+    margin-left: 90px;
 }
 
 #testimonials .owl-nav .owl-prev,
@@ -304,6 +601,11 @@ a:hover {
 /*****************************************************************************************/
 /***SUBSCRIBE SECTION BEGIN***************************************************************/
 /*****************************************************************************************/
+
+#subscribe{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
 
 #subscribe .form-inline input {
     padding: 0.65rem 3rem;
@@ -335,6 +637,14 @@ footer > .footer-top .brand-box {
 
 footer > .footer-top .brand-box img {
     width: 200px;
+}
+
+footer > .footer-top .brand-box .circle {
+    background-color: var(--color-05);
+}
+
+footer > .footer-top .brand-box .circle > a {
+    color: var(--color-01);
 }
 
 footer > .footer-top .quick-links-table,

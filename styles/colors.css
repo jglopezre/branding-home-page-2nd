@@ -9,4 +9,6 @@
     --shadow-color-02: rgba(0, 0, 0, 0.4);
     --purple-gradient-01: linear-gradient(90deg, #300537, #971f5f);
     --purple-gradient-02: linear-gradient(90deg, #681240, #971f5f);
+    --purple-gradient-03: linear-gradient(#300537, #971f5f);
+    --purple-gradient-04: linear-gradient(#971f5f, #300537);
 }
