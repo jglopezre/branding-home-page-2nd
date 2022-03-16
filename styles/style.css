@@ -4,7 +4,12 @@
 html, body {
     padding: 0;
     margin: 0;
+    width: 100%;
     font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /*****************************************************************************************/
@@ -168,6 +173,42 @@ a:hover {
 /***GENERAL SECTION END*******************************************************************/
 /*****************************************************************************************/
 /*****************************************************************************************/
+/***HEADER SECTION END********************************************************************/
+/*****************************************************************************************/
+
+header .main-nav {
+    z-index: 10000;
+    transition: 0.2s;
+}
+
+header .toggler-button{
+    color: var(--color-03);
+    text-shadow: -1px 1px var(--color-05);
+    box-shadow: -1px 1px var(--color-05);
+    font-size: 2rem;
+    border: solid 2px var(--color-03);
+    border-radius: 10px;
+}
+
+header .main-nav img {
+    transition: 0.2s;
+}
+
+header nav ul > li {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header nav ul > li > a {
+    color: var(--color-02);
+    text-shadow: -1px 1px var(--color-05);
+}
+
+/*****************************************************************************************/
+/***HEADER SECTION END********************************************************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
 /***HERO SECTION BEGIN********************************************************************/
 /*****************************************************************************************/
 
@@ -210,29 +251,7 @@ a:hover {
     width: 100vw;
 }
 
-#hero-section .main-navbar {
-    z-index: 10000;
-}
 
-#hero-section .toggler-button{
-    color: var(--color-03);
-    text-shadow: -1px 1px var(--color-05);
-    box-shadow: -1px 1px var(--color-05);
-    font-size: 2rem;
-    border: solid 2px var(--color-03);
-    border-radius: 10px;
-}
-
-#hero-section nav ul > li {
-    font-size: 1.3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#hero-section nav ul > li > a {
-    color: var(--color-02);
-    text-shadow: -1px 1px var(--color-05);
-}
 
 #hero-section .hero-caption {
     margin-top: 15%;
@@ -344,7 +363,6 @@ a:hover {
 #about-us .about-wrapper {
     position: relative;
     height: 600px;
-    border: solid 1px cyan;
 }
 
 #about-us .about-wrapper::before {
@@ -534,6 +552,8 @@ a:hover {
 #testimonials {
     margin-top: 8rem;
 }
+
+
 #testimonials .testimonials-carousel-wrapper {
     position: relative;
     width: 360px;
@@ -672,11 +692,19 @@ footer > .footer-top .small-title {
 }
   
 
-footer .footer-bottom{
+footer .footer-bottom {
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: var(--color-01);
+}
+
+footer .footer-bottom a > img {
+    transition: 0.2s;
+}
+
+footer .footer-bottom a:hover > img{
+    transform: scale(1.2) translateX(15px);
 }
 
 /*****************************************************************************************/
