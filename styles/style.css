@@ -429,9 +429,9 @@ header nav ul > li > a {
 
 #about-us .item-box {
     position: absolute;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    max-width: 800px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 54vw;
     top: 430px;
     right: 20vw;
     background-color: var(--color-05);
@@ -633,6 +633,10 @@ header nav ul > li > a {
         transform: rotate(0);
         margin-bottom: 3rem;
     }
+
+    #shop-by-category .main-title {
+        margin-bottom: 3rem;
+    }
 }
 
 /*****************************************************************************************/
@@ -749,7 +753,6 @@ header nav ul > li > a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 25% ;
-    border: solid 2px yellow;
 }
 
 #subscribe .form-inline input {

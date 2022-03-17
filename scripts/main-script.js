@@ -6,7 +6,23 @@ $(document).ready(() => {
     /* year copy end */
     
     /*  Top Scroll Detection */
-    const mainNav = document.querySelector('.main-nav');
+
+    $(window).on('scroll', () => {
+        let scroll = $(window).scrollTop();
+
+        if(scroll < 200) {
+            $('.main-nav').css('background-color', 'transparent');
+            $('.main-nav').css('box-shadow', 'none');
+            $('.main-nav').css('height', '180');
+            $('.brand-logo').css('transform', 'scale(1)');
+        }else{
+            $('.main-nav').css('background-color', 'var(--color-05)');
+            $('.main-nav').css('box-shadow', '0 5px 3px var(--shadow-color-02)');
+            $('.main-nav').css('height', '64');
+            $('.brand-logo').css('transform', 'scale(0.4)');
+        }
+    })
+    /* const mainNav = document.querySelector('.main-nav');
     const brandLogo = document.getElementById('brand-logo');
     let changingSection = document.getElementById('best-sellers');
 
@@ -23,7 +39,7 @@ $(document).ready(() => {
             mainNav.style.height = "180px"
 
         }
-    }
+    } */
     /*  Top Scroll Detection  End*/
     const testimonialText01 = "The products in this store are the best on the market with tremendous quality that help me feel fresh every time I play sports, I don't have to worry about the material or anything else, they are 100% original products and made of the best materials, I recommend them";
     const testimonialText02 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis tempore numquam cum saepe sapiente rerum accusantium deserunt incidunt in dignissimos esse ducimus voluptatem adipisci quia cupiditate, quas laudantium, alias aspernatur amet iste quidem facilis. Amet, vitae veritatis? Reprehenderit maiores explicabo eos, ipsam amet repellendus perspiciatis debitis quam ex nihil sequi?";
