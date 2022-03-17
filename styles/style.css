@@ -280,6 +280,10 @@ header nav ul > li > a {
     padding-right: 4rem;
 }
 
+#hero-section .social-box{
+    
+}
+
 #hero-section .social-box::before {
     content: "";
     display: block;
@@ -300,10 +304,26 @@ header nav ul > li > a {
 #hero-section .social-box .circle > a{
     color: var(--color-05);
 }
+
 @media screen and (max-width: 900px){
     #hero-section .hero-caption h1 {
         font-size: 3rem;
+        text-align: center;
     }
+
+   
+}
+
+@media screen and (max-height: 400px){
+    #hero-section .hero-caption h1 {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+
+    #hero-section a.action-btn {
+        margin-top: 0;
+    }
+   
 }
 
 /*****************************************************************************************/
@@ -315,8 +335,8 @@ header nav ul > li > a {
 #best-sellers {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    border: solid 2px yellow;
 }
+
 #best-sellers .card-wrapper .cart-circle {
     width: 60px;
     height: 60px;
@@ -360,6 +380,8 @@ header nav ul > li > a {
     bottom: 30px;
 }
 
+
+
 /*****************************************************************************************/
 /***BEST SELLERS SECTION END**************************************************************/
 /*****************************************************************************************/
@@ -371,7 +393,6 @@ header nav ul > li > a {
     padding-top: 4rem;
     padding-bottom:4rem;
     border: solid 2px red;
-
 }
 
 #about-us .about-wrapper {
@@ -503,9 +524,9 @@ header nav ul > li > a {
 #shop-by-category {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    border: solid 2px yellow;
     background-image: url("../img/straps-01.png");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -514,8 +535,8 @@ header nav ul > li > a {
 }
 
 #shop-by-category .card-wrapper {
-    height: 30.5vh;
-    min-height: 440px;
+    width:310px;
+    height: 400px;
     transform: rotate(12deg);
 }
 
@@ -524,19 +545,18 @@ header nav ul > li > a {
     top: 0;
     right: 20px;
     overflow: hidden;
-    width: 15.44vw;
-    min-width: 280px;
-    height: 25.41vh;
-    min-height: 366px;
+    
+    width: 80%;
+    height: 83%;
     transform: skew(-15deg);
     border-radius: 40px 60px 40px 60px;
     box-shadow: -15px 10px var(--color-01);
 }
 
 #shop-by-category .card-wrapper .shop-card-window > img {
-    height: 366px;
-    width: 26.38vw;
-    min-width: 380px;
+    height: 100%;
+    
+    width: 370px;
     margin-left: -40px;
     object-fit: cover;
     transition: transform 0.2s;
@@ -549,12 +569,12 @@ header nav ul > li > a {
 }
 
 #shop-by-category .card-wrapper .card-description {
-    left: -5px;
+    left: -15px;
     bottom: 0px;
     width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     #shop-by-category .rotated-box {
         transform: rotate(0);
     }
@@ -577,6 +597,10 @@ header nav ul > li > a {
     border: solid 2px yellow;
 }
 
+#testimonials .testimonials-caption > h1,
+#testimonials .testimonials-caption > p {
+    margin-left: 3rem;
+}
 
 #testimonials .testimonials-carousel-wrapper {
     position: relative;
@@ -589,21 +613,20 @@ header nav ul > li > a {
     content: "";
     display: block;
     position:absolute;
-    width: 550px;
+    width: 38.2vw;
     height: 130%;
     transform: skew(-30deg);
     border-radius: 20px 20px 0 0;
+    bottom: -60px;
 }
 
 #testimonials .testimonials-carousel-wrapper::before {
     background: var(--purple-gradient-03);
-    bottom: -50px;
     left: -100px;
 }
 
 #testimonials .testimonials-carousel-wrapper::after {
     background: var(--purple-gradient-04);
-    bottom: -50px;
     left: 500px;
 }
 
@@ -615,7 +638,7 @@ header nav ul > li > a {
 #testimonials .owl-nav {
     color: var(--color-05);
     font-size: 2rem;
-    margin-left: 90px;
+    margin-left: 120px;
 }
 
 #testimonials .owl-nav .owl-prev,
@@ -639,6 +662,31 @@ header nav ul > li > a {
     transform: translateX(-7px);
 }
 
+@media screen and (max-width: 960px) {
+    #testimonials .testimonials-carousel-wrapper {
+        margin-top: 3rem;
+    }
+    #testimonials .testimonials-carousel-wrapper::before,
+    #testimonials .testimonials-carousel-wrapper::after {
+        display: none;
+    }
+    
+    #testimonials {
+        background: var(--purple-gradient-04);
+        
+    }
+
+    #testimonials .testimonials-caption{
+        padding: 1rem 2rem;
+    }
+
+    #testimonials .testimonials-caption > h1,
+    #testimonials .testimonials-caption > p {
+        color: var(--color-05);
+    }
+
+    #testimonials .caption
+}
 /*****************************************************************************************/
 /***TESTIMONIALS SECTION END**************************************************************/
 /*****************************************************************************************/

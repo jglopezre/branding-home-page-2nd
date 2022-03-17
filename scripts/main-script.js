@@ -54,16 +54,14 @@ $(document).ready(() => {
         dots: false,
         margin:40,
         responsiveClass:true,
-        
-    
         responsive:{
             0:{
                 items:1,
             },
-            600:{
+            800:{
                 items:2,
             },
-            1000:{
+            1200:{
                 items:3,
             }
         }
