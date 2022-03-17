@@ -46,6 +46,8 @@ a:hover {
 /***GENERAL SECTION BEGIN*****************************************************************/
 /*****************************************************************************************/
 
+
+
 .circle {
     text-align: center;
     width: 2rem;
@@ -251,7 +253,9 @@ header nav ul > li > a {
     width: 100vw;
 }
 
-
+#hero-section .container {
+    height: 100%;
+}
 
 #hero-section .hero-caption {
     margin-top: 15%;
@@ -280,10 +284,10 @@ header nav ul > li > a {
     content: "";
     display: block;
     position: absolute;
-    width: 300px;
+    width: 20.83vw;
     height: 3px;
     top: 50%;
-    left: -280px;
+    left: -19.44vw;
     background-color: var(--color-02);
 }
 
@@ -308,7 +312,11 @@ header nav ul > li > a {
 /*****************************************************************************************/
 /***BEST SELLERS SECTION BEGIN************************************************************/
 /*****************************************************************************************/
-
+#best-sellers {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: solid 2px yellow;
+}
 #best-sellers .card-wrapper .cart-circle {
     width: 60px;
     height: 60px;
@@ -321,7 +329,6 @@ header nav ul > li > a {
     bottom: 120px;
     transition: 0.2s;
     z-index: 3;
-
 }
 
 #best-sellers .card-wrapper .cart-circle:hover {
@@ -360,9 +367,15 @@ header nav ul > li > a {
 /***ABOUT US SECTION BEGIN****************************************************************/
 /*****************************************************************************************/
 
+#about-us {
+    padding-top: 4rem;
+    padding-bottom:4rem;
+    border: solid 2px red;
+
+}
+
 #about-us .about-wrapper {
     position: relative;
-    height: 600px;
 }
 
 #about-us .about-wrapper::before {
@@ -488,8 +501,12 @@ header nav ul > li > a {
 /*****************************************************************************************/
 
 #shop-by-category {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border: solid 2px yellow;
+    background-image: url("../img/straps-01.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #shop-by-category .rotated-box {
@@ -497,7 +514,8 @@ header nav ul > li > a {
 }
 
 #shop-by-category .card-wrapper {
-    height: 440px;
+    height: 30.5vh;
+    min-height: 440px;
     transform: rotate(12deg);
 }
 
@@ -506,8 +524,10 @@ header nav ul > li > a {
     top: 0;
     right: 20px;
     overflow: hidden;
-    width: 280px;
-    height: 366px;
+    width: 15.44vw;
+    min-width: 280px;
+    height: 25.41vh;
+    min-height: 366px;
     transform: skew(-15deg);
     border-radius: 40px 60px 40px 60px;
     box-shadow: -15px 10px var(--color-01);
@@ -515,7 +535,8 @@ header nav ul > li > a {
 
 #shop-by-category .card-wrapper .shop-card-window > img {
     height: 366px;
-    width: 380px;
+    width: 26.38vw;
+    min-width: 380px;
     margin-left: -40px;
     object-fit: cover;
     transition: transform 0.2s;
@@ -530,6 +551,7 @@ header nav ul > li > a {
 #shop-by-category .card-wrapper .card-description {
     left: -5px;
     bottom: 0px;
+    width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -550,7 +572,9 @@ header nav ul > li > a {
 /***TESTIMONIALS SECTION BEGIN************************************************************/
 /*****************************************************************************************/
 #testimonials {
-    margin-top: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border: solid 2px yellow;
 }
 
 
@@ -623,8 +647,13 @@ header nav ul > li > a {
 /*****************************************************************************************/
 
 #subscribe{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-image: url("../img/straps-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 25% ;
+    border: solid 2px yellow;
 }
 
 #subscribe .form-inline input {

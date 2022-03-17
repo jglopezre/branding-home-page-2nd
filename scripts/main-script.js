@@ -54,7 +54,7 @@ $(document).ready(() => {
         dots: false,
         margin:40,
         responsiveClass:true,
-        responsiveBaseElement: '.best-seller-carousel-wrapper',
+        
     
         responsive:{
             0:{
