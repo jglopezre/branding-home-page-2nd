@@ -74,8 +74,34 @@ a:hover {
     border-radius: 50%;
 }
 
+.main-title-white,
 .main-title {
     text-transform: uppercase;
+    position: relative;
+    margin-left: 3rem;
+}
+
+.main-title-white::before,
+.main-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2rem;
+    width: 322px;
+    top: 7px;
+    left: -340px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title-white::before {
+    background-image: url('../img/ministrap-white.png');
+
+}
+
+.main-title::before {
+    background-image: url('../img/ministrap.png');
+    
 }
 
 .btn {
@@ -334,6 +360,31 @@ header nav ul > li > a {
 #best-sellers {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    position: relative;
+}
+
+#best-sellers::after,
+#best-sellers::before {
+    content: "";
+    display:block;
+    position: absolute;
+}
+
+#best-sellers::before {
+    width:97px;
+    height: 424px;
+    background-image: url("../img/straps-02.png");
+    left: 0;
+    bottom: -100px;
+
+}
+
+#best-sellers::after {
+    width:139px;
+    height: 444px;
+    background-image: url("../img/straps-01.png");
+    right: 0;
+    top: 0px;
 }
 
 #best-sellers .card-wrapper .cart-circle {
@@ -477,7 +528,8 @@ header nav ul > li > a {
     left: 7px;
 }
 
-#about-us .about-wrapper .about-title  h1 {
+
+#about-us .about-wrapper .main-title-white {
     color: var(--color-05);
 }
 
@@ -570,10 +622,31 @@ header nav ul > li > a {
 #shop-by-category {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    position: relative;
+}
+
+#shop-by-category::after,
+#shop-by-category::before {
+    content: "";
+    display:block;
+    position: absolute;
+}
+
+#shop-by-category::before {
+    width:97px;
+    height: 424px;
+    background-image: url("../img/straps-02.png");
+    left: 0;
+    bottom: -100px;
+
+}
+
+#shop-by-category::after {
+    width:139px;
+    height: 444px;
     background-image: url("../img/straps-01.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    right: 0;
+    top: 0px;
 }
 
 #shop-by-category .rotated-wrapper {
@@ -749,11 +822,37 @@ header nav ul > li > a {
 #subscribe{
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background-image: url("../img/straps-02.png");
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 25% ;
+    overflow: hidden;
 }
+
+#subscribe::after,
+#subscribe::before {
+    content: "";
+    display:block;
+    position: absolute;
+}
+
+#subscribe::before {
+    width:97px;
+    height: 424px;
+    background-image: url("../img/straps-02.png");
+    left: 0;
+    bottom: 0px;
+
+}
+
+#subscribe::after {
+    width:139px;
+    height: 444px;
+    background-image: url("../img/straps-01.png");
+    right: 0;
+    top: 0px;
+}
+
 
 #subscribe .form-inline input {
     padding: 0.65rem 3rem;

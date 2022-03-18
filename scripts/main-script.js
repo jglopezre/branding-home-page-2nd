@@ -14,12 +14,12 @@ $(document).ready(() => {
             $('.main-nav').css('background-color', 'transparent');
             $('.main-nav').css('box-shadow', 'none');
             $('.main-nav').css('height', '180');
-            $('.brand-logo').css('transform', 'scale(1)');
+            $('#brand-logo').css('transform', 'scale(1)');
         }else{
             $('.main-nav').css('background-color', 'var(--color-05)');
             $('.main-nav').css('box-shadow', '0 5px 3px var(--shadow-color-02)');
             $('.main-nav').css('height', '64');
-            $('.brand-logo').css('transform', 'scale(0.4)');
+            $('#brand-logo').css('transform', 'scale(0.4)');
         }
     })
     /* const mainNav = document.querySelector('.main-nav');
